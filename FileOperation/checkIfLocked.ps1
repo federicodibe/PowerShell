@@ -3,7 +3,7 @@
 # Script che mi dice se un file è lockato oppure no
 
 # Esempio di utilizzo 
-#   Test-FileLock.ps1 'C:\user\pippo.lol'
+#   checkIfLocked.ps1 'C:\user\pippo.lol'
 
 # --------------- 
 
@@ -26,10 +26,10 @@ function Test-FileLock {
     if ($oStream) {
       $oStream.Close()
     }
-    Write-Host 'Non bloccato'
+    return $false
   } catch {
-    # File locked da un processo
-	  Write-Host 'Bloccato'
+    # file is locked by a process.
+    return $true
   }
 }
 
