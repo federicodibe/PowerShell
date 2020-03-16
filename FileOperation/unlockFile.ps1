@@ -14,7 +14,7 @@ param([string]$fileName)
 # HACK Federico
 # Attiva il debug. Per ripristinare la modalità standard impostare come valore 'SilentlyContinue'
 
-$DebugPreference = 'Continue'
+# $DebugPreference = 'Continue'
 
 # $DebugPreference = 'SilentlyContinue'
 
@@ -22,7 +22,7 @@ $DebugPreference = 'Continue'
 
 # --------------- 
 
-Write-Debug "Start"
+# Write-Debug "Start"
 
 function Close-AllHandles {
     param(
@@ -60,7 +60,7 @@ function Close-AllHandles {
 # Punto di partenza dell'esecuzione
 
 if(!$filename){
-    echo "Rispettare il formato: ex unlockFile.ps1 'C:\Users\file.dat'
+    echo "Rispettare il formato: ex unlockFile.ps1 'C:\Users\file.dat'"
 } else {
     Write-Host $fileName
     $handles = & ./handle/handle64.exe -a -u -accepteula $filename
