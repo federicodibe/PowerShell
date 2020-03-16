@@ -3,16 +3,14 @@
 Utility scripts for Windows 10 PowerShell
 
 
-### Installation
+### Requirement
 
-PS scripts inside FileOperation folder requires Windows 10, PowerShell and admin/root rights.
-
-Install the dependencies and devDependencies and start the server.
+Windows 10, PowerShell and admin/root rights.
 
 
 ### Plugins
 
-FileOperation is currently extended with the following plugins. 
+Those scripts are currently extended with the following plugins. 
 | Plugin | Description |
 | ------ | ------ |
 | handle/handle.exe (or handle64.exe) | Handle è un utility che permette di ottenere la lista di processi che bloccano un file |
