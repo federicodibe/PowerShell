@@ -13,7 +13,7 @@ Windows 10, PowerShell and admin/root rights.
 Those scripts are currently extended with the following plugins. 
 | Plugin | Description |
 | ------ | ------ |
-| handle/handle.exe (or handle64.exe) | Handle è un utility che permette di ottenere la lista di processi che bloccano un file |
+| handle/handle.exe (or handle64.exe) | Handle is a tool that allows you to obtain the list of processes that block files |
 
 
 ### How to use
@@ -37,6 +37,10 @@ PS > .\unlockFile.ps1 'C:\Users\Federico\test.dat'
 
 ##### Check if locked
 Use this script for check if a file is locked:
+```sh
+PS > .\checkIfLocked.ps1 'filename'
+```
+Example
 ```sh
 PS > .\checkIfLocked.ps1 'C:\Users\Federico\test.dat'
 ```
